@@ -34,3 +34,6 @@ This project demonstrates the core mechanics of diffusion models:
 ## Notes
 - Currently trains on a single example; adding more images is required for generalization.
 - Designed for educational purposes to visualize the full process.
+
+> ⚠️ Note: This project is implemented from scratch for educational purposes. 
+> It is not optimized for production use and does not scale to large datasets or real-world images.
