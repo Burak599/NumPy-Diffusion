@@ -1,5 +1,5 @@
 #!!!!!!!!!!!!!!
-# Note: This example uses only a single 3x3 input, so the model does not actually learn.
+# # Note: This example uses only a single 3x3 input. The model runs correctly but does not actually learn from this single sample.
 # The purpose is to verify that all functions work correctly.
 #!!!!!!!!!!!!!!
 
@@ -89,4 +89,5 @@ if __name__ == "__main__":
     grads_W, grads_b = test_diffusion_backward(x_t, eps, eps_hat, model_cache, weights, biases, activations)
     test_AdamW(weights, grads_W)
     test_reverseDiffusion(x_forward, weights, biases, activations)
+
     print("ALL TESTS PASSED")
