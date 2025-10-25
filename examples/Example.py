@@ -1,5 +1,5 @@
 # Example: Using Scratch_Diffusion on a single 3x3 input
-# This example uses only one 3x3 input. It shows how the functions work, but the model cannot learn true from a single example.
+# This example uses only one 3x3 input. It demonstrates that the functions work, but the model cannot truly learn from a single example.
 
 from Scratch_Diffusion import (
     cosineScheduler,
@@ -34,4 +34,5 @@ print("Predicted noise (epsilon_hat):\n", epsilon_hat)
 # Reverse diffusion demo
 x_rev = reverseDiffusion(x_forward[-1], beta, alpha, alpha, weights, biases, activations, hidden_size)
 print("Reverse diffusion result (x_rev[-1]):\n", x_rev[-1])
+
 
